@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ProduitController!{% endblock %}
+
+{% block body %}
+    <div>
+        <div id="menu-title-container">
+            <h1 class="text-center text-white mb-5">Nos Menus</h1>
+            <p>
+                "Plongez dans une expérience gastronomique d'exception avec nos menus élégamment conçus,<br/> où chaque plat est une harmonie savoureuse qui révélera les délices de notre savoir faire."
+            </p>
+        </div>
+
+        {% for cat in categories %}
+
+            <div class="produit-content">
+
+
+                <h2 class="title-produit text-center mb-5">{{  cat.name }}</h2>
+                {% set foo = cat.produits %}
+
+                <div class="row g-2">
+                    {% for bar in foo %}
+                        <div class="col-lg-6">
+                            <div class="d-flex card-produit">
+                                <a href="{{ path('app_produit_show', { 'slug': bar.slug ?: 'default-slug' }) }}">
+                                {% if bar.image %}
+                                        <div id="img" class="img-produit">
+                                            <img src="/Uploads/{{ bar.image }}" alt="{{ bar.titre }}" class="img-fluid">
+                                        </div>
+                                    {% endif %}
+                                    <div class="card-body">
+                                        <h3 class="text-center mb-5 clamped-text1">{{   bar.titre }}</h3>
+                                        <p class="clamped-text5">{{ bar.description }}</p>
+                                        <p class="produit-price">{{ (bar.prix / 100)|number_format(2, ',', '.')}} €</p>
+                                    </div>
+                                </a>
+{#                                <div class="text-center mt-5">#}
+{#                                    <button class="text-center btn-reservation">#}
+{#                                        <a href="{{ path('app_reservation') }}" role="button" class="reservation-btn">Reserver</a>#}
+{#                                    </button>#}
+{#                                </div>#}
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+        {% endfor %}
+    </div>
+
+{% endblock %}

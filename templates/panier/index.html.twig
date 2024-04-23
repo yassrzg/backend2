@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PanierController!{% endblock %}
+
+{% block body %}
+    {{ dump(panier) }}
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Produit</th>
+                <th scope="col"></th>
+                <th scope="col">Quantité</th>
+                <th scope="col">Prix</th>
+                <th scope="col">Total</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% set total = null %}
+        {% for product in panier %}
+            <tr>
+                <th>
+                    <img src="/Uploads/{{ product.product.image }}" alt="{{ product.product.titre }}" height="50px">
+                </th>
+                <td>{{ product.product.titre }}</td>
+                <td>x {{ product.quantity }}</td>
+                <td>{{ (product.product.prix / 100)|number_format(2, ',', '.')}} €</td>
+                <td>{{ (product.product.prix * product.quantity / 100)|number_format(2, ',', '.')}} €</td>
+            </tr>
+            {% set total = total + (product.product.prix * product.quantity) %}
+        {% endfor %}
+        </tbody>
+    </table>
+    <div class="text-right">
+        <p>Nombre de produit : {{ panier|length }}</p>
+        <p>Total de mon panier : {{ (total / 100)|number_format(2, ',', '.')}} €</p>
+    </div>
+{% endblock %}

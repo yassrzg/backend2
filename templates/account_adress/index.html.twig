@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AccountAdressController!{% endblock %}
+
+{% block body %}
+
+    <h1>Mes adresses</h1>
+    <a>Ajouter une adresse</a>
+{{ dump(app.user) }}
+{#    {% if app.user.addresse|length == 0 %}#}
+{#        pas d'adresse ajouté#}
+{#    {% endif %}#}
+
+{% endblock %}

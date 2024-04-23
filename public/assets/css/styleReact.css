@@ -1,0 +1,561 @@
+
+
+
+.note {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.titleAvis {
+    margin-top: 5rem;
+    padding: 1rem;
+    border-bottom: 1px lightgray solid;
+    width: 30%;
+}
+
+.avis-item {
+    display: flex;
+    padding-left: 2rem;
+    justify-content: center;
+    width: 30%;
+    flex-direction: column;
+    margin-bottom: 4rem;
+    border-bottom: 1px lightgray solid;
+    padding: 1rem;
+}
+
+.avis-item p {
+    margin-top: 1.5rem;
+}
+
+#contact  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    flex-direction: column;
+    float: left;
+}
+
+#form-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container-contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contact-container  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imgContact {
+    float: left;
+    width: 50%;
+}
+
+#imgContact img {
+    width: 100%;
+    border-radius: 10rem 8rem 16rem 6rem;
+}
+
+.description-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#title-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+#contact-react {
+    padding: 10%;
+}
+.container-contact div:nth-child(5) {
+    width: 80%;
+
+}
+
+
+
+#login-react {
+    margin-top: 2rem;
+}
+
+#imgSignin {
+    width: 40%;
+    background-color: #b6ddc7;
+    border-radius: 4rem 2rem 6rem 2rem;
+}
+
+#imgSignin img {
+    width: 100%;
+}
+
+#react-allergie-regime {
+    display: flex;
+
+}
+#react-allergie-regime div:nth-child(1) {
+    float: left;
+    width: 50%;
+}
+#react-allergie-regime div:nth-child(2) {
+    float: right;
+    width: 50%;
+}
+#label {
+    padding-left: 2rem;
+}
+
+.label {
+    font-size: 1.2rem !important;
+    margin-bottom: 1rem !important;
+}
+
+#checkbox1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100% !important;
+    border-right: 1px solid lightgray;
+}
+#checkbox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grip-gap: 2rem;
+    width: 100% !important;
+    padding-left: 2rem;
+}
+
+#data-account {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top:2rem;
+    margin-bottom: 2rem;
+}
+#allergie-data  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#allergie-data p, #regime-data p {
+    margin-bottom: 0;
+    margin-left: 1rem;
+}
+
+#regime-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page-account {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#form-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+#account-title {
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+#button-account {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+#button-account button {
+    width: 40%;
+    overflow-wrap: normal;
+}
+
+
+#form-register {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+}
+
+#register-react {
+    padding: 5% 10%;
+}
+.register2 {
+    width: 80%;
+}
+
+#title-register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+
+#title-register h2 {
+    margin-bottom: 2rem;
+}
+
+#button-register {
+    width: 200%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.password {
+    margin-top:1rem;
+    margin-bottom: 2rem;
+}
+.confirmPassword {
+    margin-bottom: 1rem;
+}
+
+.account-setting-message {
+    height:2rem;
+}
+
+#box-modal {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:400px;
+    border-radius:1rem;
+    padding:2rem;
+    background-color: white;
+}
+
+#password, #confirm-password {
+    border-width: 2px;
+    border-color: #9c27b0;
+}
+.p-inputtext:enabled:focus {
+    box-shadow: none;
+    border-color: #9c27b0;
+}
+
+#modal-account > button:nth-child(1){
+    padding:1rem 2rem;
+    background-color:whitesmoke;
+    border-radius:0.5rem;
+    margin-bottom:2rem;
+}
+
+#modal-account2 > button:nth-child(1){
+    padding:1rem 2rem;
+    background-color:whitesmoke;
+    border-radius:0.5rem;
+}
+
+#modal-account2 > button:nth-child(1):hover, #modal-account > button:nth-child(1):hover {
+    background-color: darkseagreen;
+}
+
+#button-setting {
+    display:flex;
+    justify-content: space-evenly;
+}
+
+
+#close-button {
+    background-color:red;
+}
+
+#submit-button-account {
+    background-color:green;
+}
+
+.title-setting-account {
+    margin-bottom: 1rem;
+    margin-top:1rem;
+}
+
+.password-register, .confirmPassword-register {
+    width:80%
+}
+
+.password-container-register > div, .confirmPassword-container-register > div {
+    width:100%
+}
+
+.password-container-register > div > input, .confirmPassword-container-register > div > input {
+    width:100%;
+}
+
+.password-register {
+    margin-bottom :2rem;
+
+}
+
+#password-Register , #confirm-password-Register {
+    height: 1.4375em;
+    padding: 16.5px 14px;
+    box-sizing: content-box;
+}
+
+#react-allergie-regime-register {
+    display:flex;
+    margin-top:2rem;
+}
+
+
+
+.container-resetPassword {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.reset-password {
+    margin-right:2rem;
+}
+
+#button-resetPassword {
+    display:flex;
+    margin-top:3rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+#submit-button-resetPassword {
+
+    position: relative;
+    display: inline-block;
+    padding: 10px 0;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s ease-in-out;
+    letter-spacing: 4px;
+    margin-right: 15px;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    width: 40%;
+}
+
+#submit-button-resetPassword:hover {
+
+    background: #03f40f;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03f40f,
+    0 0 25px #03f40f,
+    0 0 50px #03f40f,
+    0 0 100px #03f40f;
+}
+
+#submit-button-resetPassword span {
+    position: absolute;
+    display: block;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,100% {
+        left: 100%;
+    }
+}
+
+#submit-button-resetPassword span:nth-child(1) {
+    bottom: 0px;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #03f40f);
+    animation: btn-anim1 4s linear infinite;
+}
+
+
+/* MEDIA QUERRIES PHONE */
+
+@media (max-width: 767px) {
+
+
+    #form-register {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        grid-gap: 0;
+    }
+    #form-register div {
+        width: 100%;
+    }
+    #contact-container {
+        display: flex;
+        flex-direction: column;
+    }
+    #react-allergie-regime {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #react-allergie-regime div:nth-child(1), #react-allergie-regime div:nth-child(2) {
+        float: none;
+        width: 100%;
+        padding-left: 2rem;
+    }
+    #react-allergie-regime div:nth-child(1){
+        margin-bottom: 2rem;
+    }
+    .register2 > div:nth-of-type(1) {
+        padding: 8px;
+    }
+    .register2 > div:nth-of-type(2) {
+        padding: 8px;
+    }
+    .password-register {
+        margin-bottom:1rem;
+    }
+    #button-register {
+        margin-top: 2rem;
+    }
+
+    #label {
+        padding-left: 0;
+    }
+    #checkbox1 {
+        border: none;
+    }
+    #checkbox {
+        padding-left: 0;
+    }
+
+    #contact {
+        width: 100%;
+        float: none;
+        order: 1;
+    }
+    #register-react {
+        padding: 10%;
+    }
+
+    #title-contact {
+        margin-bottom: 2rem;
+    }
+    #imgContact {
+        width: 60%;
+        float: none;
+        margin-top: 1.5rem;
+        order:2;
+    }
+    #imgSignin {
+        width: 100%;
+        float: none;
+        margin-top: 1.5rem;
+        order:2;
+    }
+    #react-allergie-regime-register {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
+        padding:8px;
+    }
+
+    #react-allergie-regime-register > div:nth-child(1), #react-allergie-regime-register > div:nth-child(2) {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
+    }
+
+    #react-allergie-regime-register > div:nth-child(1) {
+        margin-bottom:2rem;
+    }
+
+
+
+
+    #email-input, #name-input, #phone-input, #objet-input, #surname-input, #password-Register , #confirm-password-Register{
+        border: 2px solid #6bffcf;
+        border-radius: 0.5rem;
+    }
+
+    .register2 > div:nth-of-type(1) > div:nth-of-type(1) {
+        border: 2px solid #6bffcf;
+        border-radius: 0.5rem;
+        padding: 0.9rem;
+    }
+    .description-contact div div:nth-of-type(1) {
+        border: 2px solid #6bffcf;
+        border-radius: 0.5rem;
+    }
+    .description-contact div div:nth-of-type(1) fieldset {
+        border: none;
+    }
+
+    .container-contact fieldset {
+        border: none;
+    }
+
+    #button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titleAvis, .avis-item {
+        width:100%
+    }
+
+    .container-resetPassword {
+        flex-direction:column;
+    }
+    .reset-password {
+        margin-right:0;
+        margin-bottom:2rem;
+    }
+
+    #button-resetPassword {
+        margin-top:0;
+        margin-bottom:2rem;
+    }
+    #submit-button-resetPassword {
+        width:60%;
+        font-size:12px;
+    }
+
+}
+
+
+

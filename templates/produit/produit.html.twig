@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ProduitController!{% endblock %}
+
+{% block body %}
+
+    <div {{ react_component('Produit', { slug: produit.slug }) }}></div>
+    <a href="{{ path('app_add_to_mon_panier', {'id': produit.id}) }}">Ajouter au Panier</a>
+
+{% endblock %}
